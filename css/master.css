@@ -120,13 +120,6 @@
 
 
 
-
-/* loading page */
-html, body {
-  height: 100%; /* Ensure full height for body */
-  margin: 0; /* Remove default margin */
-}
-
 .loading-screen {
   position: fixed;
   top: 0;
@@ -140,18 +133,9 @@ html, body {
   align-items: center;
   z-index: 9999; /* Ensure loading screen is on top */
 }
-.loading-bar {
-  width: 60%;
-  height: 20px;
-  background-color: #f3f3f3;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  overflow: hidden;
-  margin-top: 20px;
-}
-.loading-fill {
-  height: 100%;
-  width: 0;
-  background-color: #fcd700;
-  transition: width 0.3s ease;
+
+.loading-gif {
+  width: 100px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 20px; /* Optional spacing */
 }
