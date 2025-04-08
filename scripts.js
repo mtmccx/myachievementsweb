@@ -11,3 +11,22 @@ const swiper = new Swiper('.swiper', {
     },
 });
 
+// loading screen
+ // Simulate loading
+    document.addEventListener("DOMContentLoaded", function() {
+        let loadingFill = document.getElementById('loadingFill');
+        let loadingScreen = document.getElementById('loadingScreen');
+        let body = document.body;
+
+        let width = 0;
+        let interval = setInterval(() => {
+            if (width >= 100) {
+                clearInterval(interval);
+                loadingScreen.style.display = 'none'; // Hide loading screen
+                body.style.display = 'block'; // Show body content
+            } else {
+                width++;
+                loadingFill.style.width = width + '%'; // Fill the loading bar
+            }
+        }, 30); // Adjust timing as needed
+    });
