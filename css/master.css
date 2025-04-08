@@ -19,7 +19,7 @@
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 3.5s, cursor 0.5s step-end infinite alternate;
+    animation: typing 3.5s 3s forwards, cursor 0.5s step-end infinite alternate;
   }
   
   @keyframes cursor {
