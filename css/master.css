@@ -1,7 +1,4 @@
-.img {
-    width: 33%;
-  }
-  
+
   /* web color */
   body {
     padding-top: 70px;
@@ -22,7 +19,7 @@
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 4s, cursor 0.5s step-end infinite alternate;
+    animation: typing 3.5s, cursor 0.5s step-end infinite alternate;
   }
   
   @keyframes cursor {
@@ -38,5 +35,20 @@
     to {
       width: 100%;
     }
+
+
   }
-  
+  .swiper {
+    width: 70%;
+    height: 650px; 
+}
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+}
