@@ -1,20 +1,62 @@
-.img {
-    max-width: 100%;
-    width: 33%;
-    height: auto;
-  }
-  
-  .image-wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  body {
-    padding-top: 70px;
-    background-color: #fff1b2;
-  }
-  .jumbotron {
-    background-color: #fff1b2;
-    padding: 100px 0;
-  }
-  
+.img100{
+    width: 300px;
+    
+}
+.img200{
+    width: 300px;
+    
+}
+.img300{
+    width: 300px;
+    
+}
+
+
+.center-text {
+    text-align: center;
+}
+
+/* web color */
+body {
+    padding-top: 70px; 
+    background-color: #fff1b2; 
+}
+.jumbotron {
+    background-color: #fff1b2; 
+    padding: 250px ;
+}
+
+
+
+
+
+/* Typing effect */
+.container {
+    display: inline-block;
+}
+
+.text {
+    font-size: 4em;
+    letter-spacing: 5px;
+    font-family: monospace;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        typing 4s,
+        cursor .5s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% { border-color: transparent }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
