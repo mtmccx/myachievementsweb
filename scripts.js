@@ -1,3 +1,4 @@
+// Initialize Swiper
 const swiper = new Swiper('.swiper', {
     slidesPerView: 1,
     spaceBetween: 10,
@@ -11,22 +12,21 @@ const swiper = new Swiper('.swiper', {
     },
 });
 
-// loading screen
- // Simulate loading
-    document.addEventListener("DOMContentLoaded", function() {
-        let loadingFill = document.getElementById('loadingFill');
-        let loadingScreen = document.getElementById('loadingScreen');
-        let body = document.body;
+// Handle loading screen
+document.addEventListener("DOMContentLoaded", function() {
+    const loadingFill = document.getElementById('loadingFill');
+    const loadingScreen = document.getElementById('loadingScreen');
+    const body = document.body;
 
-        let width = 0;
-        let interval = setInterval(() => {
-            if (width >= 100) {
-                clearInterval(interval);
-                loadingScreen.style.display = 'none'; // Hide loading screen
-                body.style.display = 'block'; // Show body content
-            } else {
-                width++;
-                loadingFill.style.width = width + '%'; // Fill the loading bar
-            }
-        }, 30); // Adjust timing as needed
-    });
+    let width = 0;
+    const interval = setInterval(() => {
+        if (width >= 100) {
+            clearInterval(interval);
+            loadingScreen.style.display = 'none'; 
+            body.style.display = 'block'; 
+        } else {
+            width++;
+            loadingFill.style.width = width + '%'; 
+        }
+    }, 30); 
+});
